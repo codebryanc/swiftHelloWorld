@@ -10,11 +10,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var lblHelloWorldTitle: UILabel!
-    @IBOutlet weak var btnHelloWorld: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
+    // Actions
+    @IBAction func btnHelloWorld(_ sender: UIButton) {
+        self.lblHelloWorldTitle.text = "Hello world"
+    }
 }

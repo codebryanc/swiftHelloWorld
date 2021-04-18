@@ -16,18 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btnHelloWorld" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ts-eI-Zqa" userLabel="btnHelloWorld">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btnHelloWorld" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ts-eI-Zqa" userLabel="btnHelloWorld">
                                 <rect key="frame" x="144" y="278" width="126" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="btnHelloWorld" label="btnHelloWorld"/>
                                 <state key="normal" title="Hello world button"/>
                                 <attributedString key="userComments">
                                     <fragment content="btnHelloWorld"/>
                                 </attributedString>
+                                <connections>
+                                    <action selector="btnHelloWorld:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hco-RH-NCg"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="lblHelloWorld" text="Hello World Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHD-0Q-TRN" userLabel="lblHelloWorld">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="lblHelloWorld" text="Hello World Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHD-0Q-TRN" userLabel="lblHelloWorld">
                                 <rect key="frame" x="144" y="173" width="126" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="lblHelloWorld" label="lblHelloWorld"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -39,15 +40,21 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Ts-eI-Zqa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="84M-ng-7Aa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cHD-0Q-TRN" secondAttribute="trailing" symbolic="YES" id="T3E-vK-jTf"/>
+                            <constraint firstItem="3Ts-eI-Zqa" firstAttribute="leading" secondItem="cHD-0Q-TRN" secondAttribute="leading" id="pI7-BA-fZ3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Ts-eI-Zqa" secondAttribute="bottom" constant="554" id="r2a-uV-URN"/>
+                            <constraint firstItem="3Ts-eI-Zqa" firstAttribute="top" secondItem="cHD-0Q-TRN" secondAttribute="bottom" constant="84" id="sO2-Xn-Lax"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnHelloWorld" destination="3Ts-eI-Zqa" id="513-0b-du0"/>
                         <outlet property="lblHelloWorldTitle" destination="cHD-0Q-TRN" id="nKM-88-m9n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="115"/>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
         </scene>
     </scenes>
     <resources>
